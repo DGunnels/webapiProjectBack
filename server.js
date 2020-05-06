@@ -105,10 +105,6 @@ router.post('/signin', function (req, res) {
 
 router.route('/')
     .get(authJwtController.isAuthenticated, function (req, res) {
-    }
-    .all(function (req, res) {
-        res.status(405);
-        res.send('Error: 405 \n Unsupported HTTP Method');
     });
 
 
