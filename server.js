@@ -102,7 +102,8 @@ router.post('/signin', function (req, res) {
 });
 
 router.route('/')
-    .get(authJwtController.isAuthenticated, function (req, res) {
+    .get(function (req, res) {
+        res.status(200);
     });
 
 
